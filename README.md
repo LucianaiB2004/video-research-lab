@@ -62,10 +62,6 @@ See the [template catalog](./docs/templates.md) for scope boundaries and file-le
 
 There are currently **0 published cases**. The [case directory](./cases/README.md) is ready for gradual additions. Each future case should retain its inputs, exact prompt, generation conditions, outputs, evaluation, failed attempts, and known limitations.
 
-## Acknowledgements
-
-The repository presentation and multilingual navigation were informed by the public information architecture of [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2). Video Research Lab uses its own function taxonomy and original video-prompt content.
-
 ## Status
 
 The templates have been structurally reviewed for internal consistency. Unless a case includes an explicit generation record, do not interpret its presence in this repository as proof of compatibility with every video model or as evidence of a successful generation run.
