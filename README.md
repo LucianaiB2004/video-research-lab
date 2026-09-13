@@ -43,7 +43,7 @@ See the [template catalog](./docs/templates.md) for scope boundaries and file-le
 ## Design Principles
 
 - **Function first:** each directory maps to one user-facing outcome.
-- **Structured system protocols:** every prompt uses a consistent XML-style contract for identity, priority, workflow sections, and output rules.
+- **Structured system protocols:** each prompt is a complete XML code block with named input, evidence, workflow, and output sections; copy it to the analysis model, then use its generated prompts in your video tool.
 - **Evidence before inference:** templates separate observable facts, user-requested changes, and unknown information.
 - **Timeline integrity:** shots, transitions, local generation time, and source-video time are treated explicitly.
 - **Reference clarity:** pictures, videos, subjects, and audio assets receive stable roles instead of being mixed together.
