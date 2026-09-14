@@ -20,8 +20,8 @@ The repository currently contains **10 prompt workflows**. The prompt library is
 
 1. Choose the function that matches your task.
 2. Open its prompt file and read the adjacent usage guide.
-3. Copy the complete `<system_protocol>...</system_protocol>` and provide the required video, image, audio, duration, and transformation instructions.
-4. Check the returned capability status and unresolved inputs before using the generated prompt in a video tool.
+3. Copy the complete prompt file and provide the required video, image, audio, duration, and transformation instructions.
+4. Use the single Chinese generation prompt returned by the analysis model with your video tool.
 
 ## Prompt Workflows
 
@@ -43,7 +43,7 @@ See the [template catalog](./docs/templates.md) for scope boundaries and file-le
 ## Design Principles
 
 - **Function first:** each directory maps to one user-facing outcome.
-- **Structured system protocols:** each prompt is a complete XML code block with named input, evidence, workflow, and output sections; copy it to the analysis model, then use its generated prompts in your video tool.
+- **Direct use:** each prompt file contains only one complete XML system prompt, and its normal result is one Chinese generation prompt.
 - **Evidence before inference:** templates separate observable facts, user-requested changes, and unknown information.
 - **Timeline integrity:** shots, transitions, local generation time, and source-video time are treated explicitly.
 - **Reference clarity:** pictures, videos, subjects, and audio assets receive stable roles instead of being mixed together.
